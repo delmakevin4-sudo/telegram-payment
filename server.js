@@ -19,8 +19,7 @@ await axios.post(
 `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,
 {
 chat_id: userId,
-text:
-"🎉 Paiement confirmé !\n\n✅ Accès VIP activé.\n\n🔗 https://t.me/TON_CANAL"
+text:"✅ Paiement confirmé !"
 }
 )
 
@@ -28,10 +27,6 @@ text:
 
 res.send("OK")
 
-})
-
-app.get("/", (req,res)=>{
-res.send("Bot actif")
 })
 
 app.listen(3000)
